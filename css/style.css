@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 *,
 *::after,
 *::before {
@@ -12,7 +13,7 @@ body {
   display: flex;
   color: #fff;
   flex-direction: column;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .box {
@@ -31,12 +32,11 @@ body {
   padding-bottom: 200px;
 }
 
-
 .box__inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .box__sale {
@@ -73,18 +73,21 @@ body {
   top: 7px;
 }
 
+
 .box__title {
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.2;
   font-size: 30px;
-  margin-bottom: 1rem;
+  margin-bottom: 5px;
 }
 
 .box__text {
-  font-size: 16px;
-  margin-bottom: 15px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  line-height: 1.33;
 }
 
 .box__list {
@@ -95,7 +98,9 @@ body {
 .box__item {
   margin-bottom: 5px;
 }
-
+.box__span {
+  font-size: 18px;
+}
 .box__link {
   background-color: #e64555;
   color: #fff;
@@ -111,12 +116,16 @@ body {
   background-color: #dc1e31;
   transition: all 0.3s ease;
 }
+.box__linking {
+  color: #fff;
+  text-decoration: none;
+}
 
 
 @media screen and (max-width: 818px) {
   .box {
     background: rgba(0, 0, 0, 0) url('https://hgwipn3sa-res.cloudinary.com/image/upload/w_760,f_auto,q_auto,g_auto,c_fill,dpr_2/htqc9osg3g8snai6rpgk.jpg');
-    height: 250px;
+    height: 220px;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -147,16 +156,30 @@ body {
     bottom: -33px;
     left: 30px;
   }
+  .box__span {
+    color: #002642b3;
+    font-size: 16px;
+  }
+  .box__text {
+    font-size: 16px;
+    color: #002642b3;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .box__main {
     padding-top: 650px;
   }
+  .box__links {
+    margin-bottom: 35px;
+  }
 }
 
 @media screen and (max-width: 419px) {
   .box__main {
     padding-top: 720px;
+  }
+  .box__link {
+    font-size: 14px;
   }
 }
